@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <header>
+        <img src="Images/banner.jpg" />
+        <h1>Hallwen</h1>
+
+        &nbsp;
+
+
+    </header>
+    <section>
+        <form id="form1" runat="server">
+
+
+            <nav>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/DisplayProducts..aspx">Display Products</asp:HyperLink>
+
+                </asp:ContentPlaceHolder>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/MaintainProducts.aspx">Maintain Products</asp:HyperLink>
+
+            </nav>
+
+
+        </form>
+
+    </section>
+    <footer>
+        Please contact me at <a href="mailto:customersupport@Halloween.com">customersupport@Halloween.com</a>
+        <br />
+
+    </footer>
+</body>
+
+</html>
